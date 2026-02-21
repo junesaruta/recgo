@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     }
 
     const SUPABASE_URL = process.env.SUPABASE_URL;
-    const SERVICE_ROLE = process.env.SUPABASE_SERVICE_ROLE_KEY; // ✅ ชื่อ env นี้
+    const SERVICE_ROLE = process.env.SUPABASE_SERVICE_ROLE_KEY; 
 
     if (!SUPABASE_URL) return res.status(500).json({ error: "SUPABASE_URL is missing" });
     if (!SERVICE_ROLE) return res.status(500).json({ error: "SUPABASE_SERVICE_ROLE_KEY is missing" });
